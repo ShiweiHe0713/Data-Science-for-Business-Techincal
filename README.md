@@ -260,7 +260,7 @@ A way is a way of presenting the FN and FP rates for a given prediction
 - different cutoff generates different confusion matrix
 - Loop thru different cutoff to get different matrices and accuracy, and give the best cutoff
 
-<img style="zoom:50%" src="assets/confusion_matrix.png">
+<img src="assets/confusion_matrix.png"  width=250>
 
 ### Classifier Eval Metrics
 
@@ -283,7 +283,7 @@ We have more than accuracy to eval the model, so to avoid
 ## Cross validation
 
 **ROC**: A Receiver Operating Characteristic (ROC) curve is a graph that shows the performance of a binary classification method. It plots TPR vs. FPR.
-<img alt="ROC curve" src="assets/ROC.png" style="zoom: 25%;">
+<img alt="ROC curve" src="assets/ROC.png"  width=250>
 
 **AUC**: "Area under the ROC Curve"
 
@@ -390,7 +390,7 @@ Ridge/L2 regression: Estimates are squared.
 
 Lasso/L1 regression: Estimates are absolute value.
 
-<img src="assets/ridge.png" style="zoom:50%">
+<img src="assets/ridge.png"  width=250>
 
 **λ is the penalty parameter**, protect us from overfitting.
 
@@ -440,7 +440,7 @@ Backward elimination(Regression): Improve $R^2$ every step til none of the remai
 
 - L1 Regularization is another way to reduce the number of features
 
-<img src="assets/lasso.png" style="zoom:50%">
+<img src="assets/lasso.png"  width=250">
 
   Use CV to find the best value of lambda, fit data with optimal lambda, remove features w/ coefficient = 0
 
@@ -500,7 +500,7 @@ KNN is simple to use, and can be used with multiple-class targets, but not effic
 
 **Complexity**
 
-<img src="assets/knn.png" style="zoom:50%">
+<img src="assets/knn.png"  width=250>
 
 Small `k` tends to overfit the data. (Dashed line is the “Bayes Rate”)
 
