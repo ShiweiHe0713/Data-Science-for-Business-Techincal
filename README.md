@@ -21,7 +21,9 @@
     - [Classifier Eval Metrics](#classifier-eval-metrics)
   - [Cross validation](#cross-validation)
     - [Grid search](#grid-search)
-- [T5 Evaluation](#t5-evaluation)
+- [T5 Evaluation ⭐️](#t5-evaluation-️)
+  - [ROC \& AUC](#roc--auc)
+  - [Lift Curve](#lift-curve)
 - [T6 Linear Classification \& Regression](#t6-linear-classification--regression)
 - [T7 Feature Engineering \& Variable Selection](#t7-feature-engineering--variable-selection)
 - [T8 Similarity, Neighbors and Clustering](#t8-similarity-neighbors-and-clustering)
@@ -286,8 +288,40 @@ We have more than accuracy to eval the model, so to avoid
 
 ### Grid search
 
-# T5 Evaluation
+# T5 Evaluation ⭐️
+## ROC & AUC
+**What is ROC and AUC?**
+The ROC Curve is a graphical plot that illustrates the diagnostic ability of a binary classifier system as its discrimination threshold is varied.
 
+**What is ROC curve plotting?**
+It is created by plotting the true positive rate (TPR, also known as sensitivity) against the false positive rate (FPR, 1 - specificity) at various threshold settings.
+
+**What is TPR vs FPR?**
+Different applications may require different trade-offs between sensitivity (True Positive Rate) and specificity (1 - False Positive Rate). For example, in **medical diagnostics**, you might prefer a higher sensitivity to ensure all positive cases are identified, even at the cost of more false positives. The ROC curve allows you to visualize these trade-offs and choose a threshold that best meets the specific needs of the application.
+
+**What is AUC?**
+The Area Under the Curve (AUC) is a performance metric for binary classification models. This metric provides an aggregate measure of performance across all possible classification thresholds, AUC ranges from 0 to 1.
+Specifically, it refers to the area under the ROC curve. The curve provides a tool to select the best model threshold for balancing sensitivity and specificity. A higher curve towards the upper left corner indicates a better performance, which means an AUC closer to 1.
+
+## Lift Curve
+The Lift Curve is used in predictive modeling to show how much better one can expect to do with the predictive model comparing to a random choice.
+**What is base rate?**
+The term "base rate" in the context of predictive modeling and statistics refers to the underlying probability of a particular class in the data without considering any other factors or features.(e.g., if you are predicting fraud in a dataset where 2% of transactions are fraudulent, then the base rate of fraud is 2%).
+
+**When will base rate work best?**
+Knowing the base rate can help in choosing the right modeling techniques and metrics. For example, in cases of a very low base rate (highly imbalanced data), standard accuracy might not be a meaningful performance metric because a model that always predicts the majority class would appear highly accurate but is practically useless. Metrics like precision, recall, F1-score, or the use of ROC curves become more relevant in such cases.
+
+**What is the difference between ROC and Lift Curve?**
+Unlike the ROC curve that primarily evaluates binary classification problems, the lift curve helps in both binary and multiclass classification scenarios, particularly in direct marketing.
+
+**What is life curve plotting?**
+The lift curve plots the ratio of positive responses (or another target metric) gained by using the model against a baseline of random responses as a function of the percentage of cases examined.
+
+**Comparing the Three**
+- AUC is a single scalar value summarizing the overall ability of the test to discriminate between the positive and negative classes across all thresholds.
+- ROC Curve provides a comprehensive visual representation of a classifier's performance at all thresholds, letting analysts choose a threshold that balances sensitivity and specificity according to the business context.
+- Lift Curve focuses more on the effectiveness of a predictive model in terms of "lifting" the results over a random model, which is particularly useful in campaign targeting and resource optimization.
+- Each of these metrics and curves has its specific use cases and helps in different aspects of evaluating the performance of classification models.
 
 # T6 Linear Classification & Regression
 
