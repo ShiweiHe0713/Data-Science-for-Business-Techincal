@@ -168,7 +168,7 @@ sklearn.preprocessing.OneHotEncoder
 
 Side by side box plots allow you to compare numeric distributions across variables which are categorical.
 
-![box plot](assets/box_plot.png)
+<img alt="box plot" src="assets/box_plot.png"  width=250>
 
 **Scatterplot**
 
