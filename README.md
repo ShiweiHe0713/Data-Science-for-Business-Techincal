@@ -40,7 +40,7 @@
 
 CRISP: Cross-Industry Standard Process
 
-<img style="zoom:25%" src="assets/data_pipeline.png">
+<img style="width=100%" src="assets/data_pipeline.png">
 
 **Business understanding, Data Understanding, Data Preparation, Modeling,** 
 
