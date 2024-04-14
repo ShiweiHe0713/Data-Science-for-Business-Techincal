@@ -306,6 +306,7 @@ Specifically, it refers to the area under the ROC curve. The curve provides a to
 
 ## Lift Curve
 The Lift Curve is used in predictive modeling to show how much better one can expect to do with the predictive model comparing to a random choice.
+<img src="assets/life_curve.png" width=250>
 **What is base rate?**
 The term "base rate" in the context of predictive modeling and statistics refers to the underlying probability of a particular class in the data without considering any other factors or features.(e.g., if you are predicting fraud in a dataset where 2% of transactions are fraudulent, then the base rate of fraud is 2%).
 
